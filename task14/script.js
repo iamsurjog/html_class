@@ -32,6 +32,7 @@ function getval() {
     console.log(count);
     console.log(color);
     document.getElementById('indicator').style.color = color;
+    document.getElementById('pass').style.background = color;
     document.getElementById('indicator').innerText = txt;
 }
 
