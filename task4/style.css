@@ -1,0 +1,67 @@
+body{
+    background-color: #000000;
+    color:white;
+}
+
+table {
+    width:100%;
+    border:3px solid white;
+    color: white;
+}
+
+
+.colored{
+    background-color:#5d5a8a;
+}
+
+tr{
+    background-color: gray;
+}
+
+tr.colored{
+    background-color:#5d5a8a;
+}
+
+td:hover{
+    background-color: rgb(90, 145, 82);
+}
+
+.active{
+    background-color: rgb(171, 60, 60);
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+/* Add a black background color to the top navigation */
+.nav-bar {
+    background-color: black;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+/* Style the links inside the navigation bar */
+.nav-bar a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.nav-bar a:hover {
+    background-color: #454545;
+}
+
+/* Add a color to the active/current link */
+.nav-bar a.current {
+    background-color: #454545;
+    color: white;
+}
+

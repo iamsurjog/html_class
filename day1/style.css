@@ -1,0 +1,50 @@
+*{
+    background: beige;
+    font-family: cursive;
+    font-size: 12px;
+}
+
+h1{
+    color: rebeccapurple;
+    font-size: 30px;
+}
+
+.nav-bar a{
+    color: orange;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+a:hover{
+    color:green;
+    text-decoration: underline;
+}
+
+
+
+.one{
+    color: red;
+}
+
+.two{
+    text-align: center;
+    text-decoration: underline;
+}
+
+.nav-bar{
+    text-align: center;
+}
+
+#heading{
+    color:blue;
+}
+
+#topics{
+    color: red;
+}
+
+#secret{
+    text-decoration:line-through;
+    color: black;
+}

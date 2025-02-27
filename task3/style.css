@@ -1,0 +1,27 @@
+body{
+    background-color: #000000;
+    color:white;
+}
+
+table {
+    width:100%;
+    border:3px solid white;
+    color: white;
+}
+
+
+.colored{
+    background-color:#5d5a8a;
+}
+
+tr{
+    background-color: gray;
+}
+
+tr.colored{
+    background-color:#5d5a8a;
+}
+
+.active{
+    background-color: rgb(171, 60, 60);
+}

@@ -1,0 +1,23 @@
+ol{
+    font-family: monospace;
+    color:blue;
+    text-decoration:underline;
+}
+
+ol:hover{
+    background-color: green;
+    color: white;
+}
+
+ul{
+    font-family: cursive;
+    color:red;
+    list-style-type: square;
+    text-decoration:line-through;
+}
+
+ul:hover{
+    background-color: green;
+    color: white;
+}
+

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        var num1 = ""
+        var num2 = ""
+        var optor = ""
+        function disp_update(){
+            document.getElementById("current").innerText = num1
+            document.getElementById("buffer").innerText = num2+optor
+        }
+        function addnum(a){
+            num1 += a
+            disp_update()
+        }
+        function op(a){
+            if (num1!=""){
+                num2 = num1
+                num1 = ""
+            }
+            if(num2 !="" || num1 != ""){
+                optor = a
+                document.getElementById("buffer").innerText = optor
+            }
+        }
+        function equals(){
+            num1 = eval(num2 + optor + num1) + ""
+            num2 = ""
+            optor = ""
+            if (num1 == "undefined"){
+                num1 = ""
+            }
+            disp_update()
+        }
+        function clr(){
+            // console.log("HERE")
+            num1 = ""
+            num2 = ""
+            optor = ""
+            disp_update()
+        }
+    </script>
+</head>
+<body>
+    <h1>Calculator</h1>
+    <div class="main">
+        <div class="display">
+            <div id="current">
+
+            </div>
+            <div id="buffer">
+
+            </div>
+        </div>
+        <button type="button" class="keys" onclick="addnum(1)">1</button>
+        <button type="button" class="keys" onclick="addnum(2)">2</button>
+        <button type="button" class="keys" onclick="addnum(3)">3</button>
+        <button type="button" class="keys" onclick="op('+')">+</button>
+        <button type="button" class="keys" onclick="addnum(4)">4</button>
+        <button type="button" class="keys" onclick="addnum(5)">5</button>
+        <button type="button" class="keys" onclick="addnum(6)">6</button>
+        <button type="button" class="keys" onclick="op('-')">-</button>
+        <button type="button" class="keys" onclick="addnum(7)">7</button>
+        <button type="button" class="keys" onclick="addnum(8)">8</button>
+        <button type="button" class="keys" onclick="addnum(9)">9</button>
+        <button type="button" class="keys" onclick="op('*')">*</button>
+        <button type="button" class="keys" onclick="clr()">clr</button>
+        <button type="button" class="keys" onclick="addnum(0)">0</button>
+        <button type="button" class="keys" onclick="equals()">=</button>
+        <button type="button" class="keys" onclick="op('/')">/</button>
+
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+*{
+    background-color: red;
+    color: white;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+
+img{
+    width:70px;
+    height: 70px;
+    padding:100px 0;
+}
+
+h1{
+    font-size: 50px;
+}
+
+p{
+    font-size: 20px;
+}

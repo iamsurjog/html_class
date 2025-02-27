@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function getName(){
+            var name = prompt("What is your name?")
+            // console.log(name)
+            if (name==null){
+                return getName()
+            }
+            return name
+        }
+        var name = getName()
+        document.write(`HELLO ${name}.`)
+        if(name=="suja"){
+            document.getElementById('wot').innerText = "<img src='frieren-kys.gif'>"
+        }
+    </script>
+</head>
+<body>
+    <button onclick="document.getElementById('demo').innerHTML = Date()">
+        Click me to get
+    </button>
+    <h1 id="demo">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+    </h1>
+    <div id="wot">
+        <img src="thumb.png">
+    </div>
+</body>
+</html>

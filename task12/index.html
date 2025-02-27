@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Task 12</title>
+</head>
+<body>
+    <h1 onmouseover="change_color()" onmouseleave="revert_color()" id="head">Hover Over Me</h1>
+    <button onclick="change_text()">CLICK ME!!!</button>
+    <p id="text1">look here!!!</p>
+    <input type="text" onkeyup="display_text()" id="inp">
+    <p id="text2"></p>
+    <button onclick="change_bg()">Change background</button>
+    <button onclick="alert('alert alert alert')">alert!!!</button>
+    <script>
+        function change_color(){
+            document.getElementById('head').style.color = "blue";
+        }
+        function revert_color(){
+            document.getElementById('head').style.color = "black";
+        }
+        function change_text(){
+            document.getElementById('text1').innerText = "MAGIC!!!!";
+        }
+        function display_text(){
+            var n = document.getElementById('inp').value;
+            document.getElementById('text2').innerText = n;
+        }
+        function change_bg(){
+            var s = confirm("Confirm change background?");
+            if (s==true){
+                document.body.style.backgroundColor = "aliceblue";
+            }
+        }
+    </script>
+</body>
+</html>
