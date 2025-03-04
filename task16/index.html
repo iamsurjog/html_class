@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Task 16</title>
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <h1 id="count"></h1>
+        <button onclick="inc()">ADD</button>
+        <button onclick="dec()">SUB</button>
+        <button onclick="rst()">Reset</button>
+        <br>
+        <button onclick="bgchange()">change bg</button>
+        <script>
+            var num = 0;
+            function inc(){
+                num = num + 1;
+                document.getElementById('count').innerHTML = num;
+            }
+            function dec(){
+                num = num - 1;
+                document.getElementById('count').innerHTML = num;
+            }
+            function rst(){
+                num = 0;
+                document.getElementById('count').innerHTML = num;
+            }
+            function bgchange(){
+                r = Math.floor(Math.random() * 256);
+                g = Math.floor(Math.random() * 256);
+                b = Math.floor(Math.random() * 256);
+                document.body.style.background = "rgb(" + r + ", " + g + ", " + b + ")";  
+            }
+        </script>
+    </body>
+</html>
